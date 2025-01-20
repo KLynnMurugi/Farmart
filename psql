@@ -1,0 +1,5 @@
+CREATE DATABASE farmart_db;
+CREATE USER farmart_user WITH ENCRYPTED PASSWORD 'password';
+GRANT ALL PRIVILEGES ON DATABASE farmart_db TO farmart_user;
+\q
+

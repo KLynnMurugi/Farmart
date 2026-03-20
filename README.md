@@ -44,10 +44,61 @@ Farmart is an e-commerce platform designed to connect farmers directly with cons
 - **Order Management**: Farmers can confirm or reject orders for animals.
 
 ## Project Setup
+Getting StartedFollow these steps to get the Farmart marketplace running on your local machine.
+Prerequisites
+Python 3.xNode.js & npmGit
+## Step 1: Backend Setup (Flask)
+Open a terminal (Linux) or Command Prompt (Windows) in the root project folder.
+### Linux (Ubuntu/Debian)Bash
+# 1. Create a virtual environment
+python3 -m venv venv
 
-### Backend Setup
+# 2. Activate the environment
+source venv/bin/activate
 
-1. **Clone the repository**:
-   ```bash
-   git clone git@github.com:SDF-PT07-GROUP-7/Farmart.git
-   cd farmart
+# 3. Install dependencies
+pip install flask flask-sqlalchemy flask-cors flask-migrate axios
+
+# 4. Seed the database (Run once to populate animals)
+python3 seed.py
+
+# 5. Run the server
+python3 app.py
+
+### WindowsBash
+# 1. Create a virtual environment
+python -m venv venv
+
+# 2. Activate the environment
+.\venv\Scripts\activate
+
+# 3. Install dependencies
+pip install flask flask-sqlalchemy flask-cors flask-migrate axios
+
+# 4. Seed the database (Run once to populate animals)
+python seed.py
+
+# 5. Run the server
+python app.py
+
+## Step 2: Frontend Setup (React)Open a new terminal window and navigate to your frontend directory.
+Both Windows & LinuxBash
+# 1. Navigate to frontend folder
+cd frontend
+
+# 2. Install Node packages
+npm install
+
+# 3. Start the React development server
+npm start
+
+The app will be available at http://localhost:3000.
+
+## Step 2: Backend Setup (React)Open a new terminal window and navigate to your backend directory.
+LinuxBash
+# 1. Navigate to backend folder
+cd backend
+
+# 2. Run seed.py
+python3 seed.py
+
